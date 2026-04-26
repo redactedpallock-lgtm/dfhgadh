@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timber Dash - Tree Chopping Simulator</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <div id="hud">
+            <div class="hud-block">
+                <span class="hud-label">⭐ SCORE</span>
+                <span id="score">0</span>
+            </div>
+            <div class="hud-block title-block">
+                <span id="game-title">🪓 TIMBER DASH</span>
+            </div>
+            <div class="hud-block">
+                <span class="hud-label">❤️ LIVES</span>
+                <span id="lives">3</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="480"></canvas>
+
+        <div id="overlay" class="hidden">
+            <div id="overlay-box">
+                <div id="overlay-title">GET READY!</div>
+                <div id="overlay-msg"></div>
+                <button id="overlay-btn">▶ START GAME</button>
+            </div>
+        </div>
+
+        <div id="controls-bar">
+            <span>🖱️ CLICK or <kbd>SPACE</kbd> to chop &nbsp;|&nbsp; Don't chop the bunnies! 🐰</span>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
